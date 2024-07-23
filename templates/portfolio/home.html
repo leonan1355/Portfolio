@@ -1,0 +1,17 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+{% block content %}
+    <section class="conteudo__home">
+        <div class="texto__home">
+            <h1 class="titulo__home">Bem-vindo! Sou Leonan Malaguti Ferreira, um desenvolvedor backend.</h1>
+            <a href="{% static 'assets/files/cv_leonan.docx' %}" class="download__curriculo" download>Download CV</a>
+        </div>
+        <div>
+            <img class="imagem__home" src="{% static 'assets/imagens/home_perfil.jpeg' %}" alt="foto home">
+        </div>
+    </section>
+{% endblock %}
+
+
+
+
