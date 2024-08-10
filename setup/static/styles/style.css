@@ -136,17 +136,6 @@ body {
     margin-right: 1.5rem;
 }
 
-.pagina-inicial {
-    margin: 0 auto;
-    max-width: 1440px;
-    padding: 1.5rem;
-}
-
-.principal {
-    display: flex;
-    justify-content: space-between;
-}
-
 .rodape {
     align-items: center;
     background-color: #04244F;
@@ -236,7 +225,7 @@ body {
 
 .informacoes__pessoais {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
 }
@@ -341,7 +330,6 @@ body {
 }
 
 .habilidade__pcard {
-    max-width: 150px;
     display: block;
 }
 
@@ -350,7 +338,6 @@ body {
 }
 
 .habilidade__scard {
-    max-width: 150px;
     display: block;
     margin-right: 3rem;
 }
@@ -370,25 +357,29 @@ body {
     text-align: center;
 }
 
-.projeto__imagem {
-    width: 150px;
-    margin-bottom: 1rem;
-}
-
 .projeto__bloco {
     display: flex;
     width: 150vh;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    margin-bottom: 1%;
 }
 
 .projeto__card {
-    margin-right: 6rem;
-    max-width: 150px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 10px;
 }
 
-.projeto__card p {
-    color: white;
-    text-align: center;
+.projeto__imagem {
+    margin: 0 auto 1rem;
+    border: 1px solid yellow;
+    border-radius: 8px;
 }

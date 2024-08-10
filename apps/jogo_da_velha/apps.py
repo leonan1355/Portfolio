@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 class JogosConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'apps.jogos'
+    name = 'apps.jogo_da_velha'

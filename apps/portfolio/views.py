@@ -27,3 +27,9 @@ def sobre_mim(request):
 
 def habilidades(request):
     return render(request, 'portfolio/habilidades.html')
+
+def projetos(request):
+    return render(request, 'portfolio/projetos.html')
+
+def jogos(request):
+    return render(request, 'portfolio/jogos.html')
