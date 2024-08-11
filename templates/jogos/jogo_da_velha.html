@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Leonan</title>
+    <link rel="icon" type="image/jpg" sizes="16x16" href="{% static 'assets/icones/favicon.jpg' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'styles/style_jogo_da_velha.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+</head>
+
+<body>
+    {% include 'partials/_menu.html' %}
+    <section class="conteudo__jogo_da_velha">
+        <div id="jogo_da_velha">
+            <input id="tela" name="tela" value="Vamos Jogar!" readonly>
+            <div id="botoes">
+                <button type="submit" name="botao" value="J" class="J">Jogar Denovo</button>
+                <button type="submit" name="botao" value="0" class="BR"></button>
+                <button type="submit" name="botao" value="1" class="BLR"></button>
+                <button type="submit" name="botao" value="2" class="BL"></button>
+                <button type="submit" name="botao" value="3" class="TBR"></button>
+                <button type="submit" name="botao" value="4" class="TBLR"></button>
+                <button type="submit" name="botao" value="5" class="TBL"></button>
+                <button type="submit" name="botao" value="6" class="TR"></button>
+                <button type="submit" name="botao" value="7" class="TLR"></button>
+                <button type="submit" name="botao" value="8" class="TL"></button>
+            </div>
+        </div>
+    </section>
+    {% include 'partials/_footer.html' %}
+    <script src="{% static 'js/jogo_da_velha.js' %}"></script>
+</body>
+</html>
