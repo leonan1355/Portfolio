@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.conf import settings
-from django.urls import reverse
 from datetime import datetime
 
 def home(request):
@@ -20,10 +19,19 @@ def calcular_idade(data_nascimento):
         idade -= 1
     return idade
 
+def calcular_estudo(data_estudo):
+    """Função que calcula meu tempo de estudo para evitar atualizações"""
+    hoje = datetime.now()
+    inicio = datetime.strptime(data_estudo, '%Y-%m-%d')
+    estudo = hoje.month - inicio.month
+    return estudo
+
 def sobre_mim(request):
     data_nascimento = '1998-05-05'
+    data_estudo = '2024-02-01'
     idade = calcular_idade(data_nascimento)
-    return render(request, 'portfolio/sobre_mim.html', {'idade': idade})
+    estudo = calcular_estudo(data_estudo)
+    return render(request, 'portfolio/sobre_mim.html', {'idade': idade, 'estudo': estudo})
 
 def habilidades(request):
     return render(request, 'portfolio/habilidades.html')
