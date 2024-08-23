@@ -28,7 +28,7 @@ def calcular_estudo(data_estudo):
 
 def sobre_mim(request):
     data_nascimento = '1998-05-05'
-    data_estudo = '2024-02-01'
+    data_estudo = '2024-01-01'
     idade = calcular_idade(data_nascimento)
     estudo = calcular_estudo(data_estudo)
     return render(request, 'portfolio/sobre_mim.html', {'idade': idade, 'estudo': estudo})

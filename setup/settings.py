@@ -34,6 +34,8 @@ INSTALLED_APPS = [
     'apps.calculadora',
     'apps.jogo_da_velha',
     'apps.cadastro',
+    'apps.numero_secreto',
+    'apps.jogo_da_cobra',
 ]
 
 MIDDLEWARE = [
