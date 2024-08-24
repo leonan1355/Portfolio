@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'apps.cadastro',
     'apps.numero_secreto',
     'apps.jogo_da_cobra',
+    'apps.tftbuilder',
 ]
 
 MIDDLEWARE = [
@@ -136,3 +137,6 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'leonan.ferreira.dev@hotmail.com'
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
