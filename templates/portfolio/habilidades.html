@@ -1,0 +1,49 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+{% block content %}
+    <section class="conteudo__paginas">
+        <div>
+            <h1 class="titulo__paginas">HABILIDADES</h1>
+            <h2 class="texto__habilidades">• HABILIDADES PRINCIPAIS:</h2>
+        </div>
+        <section class="habilidades__pbloco">
+            <div class="habilidade__pcard">
+                <img class="habilidade__icone" src="{% static 'assets/icones/python.png' %}" alt="habilidade python">
+                <p>PYTHON</p>
+            </div>
+            <div class="habilidade__pcard">
+                <img class="habilidade__icone" src="{% static 'assets/icones/django.png' %}" alt="habilidade django">
+                <p>DJANGO</p>
+            </div>
+            <div class="habilidade__pcard">
+                <img class="habilidade__icone" src="{% static 'assets/icones/django_rest.png' %}" alt="habilidade REST">
+                <p>DJANGO REST</p>
+            </div>
+            <div class="habilidade__pcard">
+                <img class="habilidade__icone" src="{% static 'assets/icones/mysql.png' %}" alt="habilidade MySQL">
+                <p>MySQL</p>
+            </div>
+            <div class="habilidade__pcard">
+                <img class="habilidade__icone" src="{% static 'assets/icones/node.png' %}" alt="habilidade NodeJS">
+                <p>NodeJs</p>
+            </div>
+        </section>
+        <div>
+            <h2 class="texto__habilidades">• HABILIDADES SECUNDÁRIAS:</h2>
+        </div>
+        <section class="habilidades__sbloco">
+            <div class="habilidade__scard">
+                <img class="habilidade__icone" src="{% static 'assets/icones/html.png' %}" alt="habilidade HTML">
+                <p>HTML</p>
+            </div>
+            <div class="habilidade__scard">
+                <img class="habilidade__icone" src="{% static 'assets/icones/css.png' %}" alt="habilidade CSS">
+                <p>CSS</p>
+            </div>
+            <div class="habilidade__scard">
+                <img class="habilidade__icone" src="{% static 'assets/icones/javascript.png' %}" alt="habilidade JS">
+                <p>JavaScript</p>
+            </div>
+        </section>
+    </section>
+{% endblock %}

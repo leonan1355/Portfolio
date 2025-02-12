@@ -1,0 +1,31 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+{% block content %}
+    <section class="conteudo__paginas">
+        <div>
+            <h1 class="titulo__paginas">SOBRE MIM</h1>
+            <h2 class="texto__paginas">Tenho {{ estudo }} de estudo intensivo e prática em desenvolvimento backend, especializado em Python, templates Django, Django REST e bancos de dados MySQL. Possuo conhecimentos intermediários em HTML, CSS e JavaScript, permitindo-me atuar de forma versátil no desenvolvimento de aplicações web. Estou em constante aprendizado e aperfeiçoamento, buscando sempre aplicar as melhores práticas e soluções eficientes em meus projetos.</h2>    
+        </div>
+        <div class="informacoes__pessoais">
+            <p><img class="imagem__informacoes" src="{% static 'assets/icones/idade.png' %}" alt="ícone idade"> Idade: {{ idade }} anos</p>
+            <p><img class="imagem__informacoes" src="{% static 'assets/icones/cidade.png' %}" alt="ícone cidade"> Cidade: Caraguatatuba - SP</p>
+        </div>
+        <section class="formacoes__alura">
+            <div class="descricao__alura">
+                <p class="titulo__alura"><img class="imagem__formacao" src="{% static 'assets/icones/formacao.png' %}" alt="ícone cidade"> Formações Alura:</p>
+                <ul class="texto__alura">
+                    <li>Python com Orientação a Objetos</li>
+                    <li>Django: Crie Aplicações em Python</li>
+                    <li>Django REST Framework: Crie APIs com Python</li>
+                    <li>Banco de Dados com MySQL</li>
+                    <li>Hospedagem de aplicações com AWS</li>
+                </ul>
+            </div>
+            <div>
+                <a href="https://www.alura.com.br" target="_blank">
+                    <img class="imagem__alura" src="{% static 'assets/icones/alura.jpg' %}" alt="ícone alura">
+                </a>
+            </div>
+        </section>
+    </section>
+{% endblock %}

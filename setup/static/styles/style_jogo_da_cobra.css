@@ -1,0 +1,48 @@
+.conteudo_jogo_da_cobra{
+    margin: 0 320px;
+    display: flex;
+    width: calc(100vh + 270px);
+    height: calc(100vh - 3rem);
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.painelJogo{
+    border: 3px solid yellow;
+}
+
+.pontuacaoTexto{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.botaoJogarDenovo{
+    color: yellow;
+    background-color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 150px;
+    height: 75px;
+    border: 4px solid yellow;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.botaoJogarDenovo:hover{
+    color: hsl(60, 100%, 70%);
+    border: 4px solid hsl(60, 100%, 70%);
+}
+
+.botaoJogarDenovo:active{
+    color: hsl(60, 100%, 80%);
+    border: 4px solid hsl(60, 100%, 80%);
+}

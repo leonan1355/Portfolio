@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Leonan</title>
+    <link rel="icon" type="image/jpg" sizes="16x16" href="{% static 'assets/icones/favicon.jpg' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'styles/style_jogo_da_cobra.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+</head>
+
+<body>
+    {% include 'partials/_menu.html' %}
+    <section class="conteudo_jogo_da_cobra">
+        <div class="bloco1">
+            <canvas class="painelJogo" width="500" height="500"></canvas>
+            <div class="pontuacaoTexto">0</div>
+        </div>
+        <button class="botaoJogarDenovo">Jogar Denovo</button>
+    </section>
+    {% include 'partials/_footer.html' %}
+    <script src="{% static 'js/jogo_da_cobra.js' %}"></script>
+</body>
+</html>

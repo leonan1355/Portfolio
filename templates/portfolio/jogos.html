@@ -1,0 +1,43 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+{% block content %}
+<section class="conteudo__paginas">
+    <h1 class="titulo__paginas">JOGOS</h1>
+    <section class="projeto__bloco">
+        <a href="{% url 'jogos/jogo_da_velha' %}" class="projeto__card">
+            <img class="projeto__imagem" src="{% static 'assets/imagens/jogo_da_velha.png' %}" alt="jogo da velha">
+            <p>Jogo da Velha</p>
+        </a>
+        <a href="{% url 'jogos/numero_secreto' %}" class="projeto__card">
+            <img class="projeto__imagem" src="{% static 'assets/imagens/jogo_numero_secreto.png' %}" alt="numero secreto">
+            <p>Jogo do Número Secreto</p>
+        </a>
+        <a href="{% url 'jogos/jogo_da_cobra' %}" class="projeto__card">
+            <img class="projeto__imagem" src="{% static 'assets/imagens/jogo_da_cobra.png' %}" alt="jogo da cobra">
+            <p>Jogo da Cobra</p>
+        </a>
+        <a href="" class="projeto__card">
+            <img class="projeto__imagem" src="{% static 'assets/imagens/work_in_progress.jpg' %}" alt="projeto x">
+            <p>Projeto em Desenvolvimento</p>
+        </a>
+    </section>
+    <section class="projeto__bloco">
+        <a href="" class="projeto__card">
+            <img class="projeto__imagem" src="{% static 'assets/imagens/work_in_progress.jpg' %}" alt="projeto x">
+            <p>Projeto em Desenvolvimento</p>
+        </a>
+        <a href="" class="projeto__card">
+            <img class="projeto__imagem" src="{% static 'assets/imagens/work_in_progress.jpg' %}" alt="projeto x">
+            <p>Projeto em Desenvolvimento</p>
+        </a>
+        <a href="" class="projeto__card">
+            <img class="projeto__imagem" src="{% static 'assets/imagens/work_in_progress.jpg' %}" alt="projeto x">
+            <p>Projeto em Desenvolvimento</p>
+        </a>
+        <a href="" class="projeto__card">
+            <img class="projeto__imagem" src="{% static 'assets/imagens/work_in_progress.jpg' %}" alt="projeto x">
+            <p>Projeto em Desenvolvimento</p>
+        </a>
+    </section>
+</section>
+{% endblock %}

@@ -1,0 +1,73 @@
+.conteudo_chatbox{
+    margin: 0 270px;
+    display: flex;
+    width: calc(100vh + 270px);
+    height: calc(100vh - 3rem);
+    justify-content: center;
+    align-items: center;
+}
+
+#chatbox{
+    width: 500px;
+    font-family: Arial, sans-serif;
+    background-color: blue;
+    border-radius: 5px;
+    border: 5px solid blue;
+    overflow: hidden;
+    margin-left: 150px;
+    flex-direction: column;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#tela1, #tela2 {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    resize: none;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+#tela1 {
+    width: 100%;
+    color: black;
+    height: 25rem;
+    background-color: white;
+}
+
+#tela2 {
+    width: 100%;
+    color: white;
+    height: 3rem;
+    background-color: hsl(0, 0%, 20%);
+}
+
+#question {
+    display: flex;
+}
+
+button{
+    width: 5rem;
+    height: 4rem;
+    border: none;
+    background-color: rgb(0, 168, 107);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(158, 100%, 43%);
+}
+
+button:active{
+    background-color: hsl(158, 100%, 53%);
+}

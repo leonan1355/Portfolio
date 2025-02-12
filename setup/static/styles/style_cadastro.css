@@ -1,0 +1,122 @@
+.conteudo_cadastro_validacao{
+    margin: 0 320px;
+    display: flex;
+    width: calc(100vh + 270px);
+    height: calc(100vh - 3rem);
+    align-items: center;
+}
+
+.conteudo_menu_cadastro{
+    display: flex;
+    margin-right: 30px;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.conteudo_menu_cadastro a{
+    width: 180px;
+    height: 70px;
+    margin-bottom: 10px;
+    border: 5px solid red;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo_menu_cadastro a.active{
+    color: yellow;
+}
+
+.conteudo_menu_cadastro a:hover{
+    background-color: hsl(0, 0%, 5%);
+}
+
+.conteudo_menu_cadastro a:active{
+    background-color: hsl(0, 0%, 10%);
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgb(4, 8, 75), rgb(5, 5, 196));
+    height: 350px;
+    width: 450px;
+    border-radius: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label{
+    color: white;
+    margin-bottom: 5px;
+}
+
+.campo input{
+    height: 2rem;
+    border-radius: 5px;
+    padding-left: 1rem;
+    width: 400px;
+}
+
+.cadastro button{
+    height: 50px;
+    width: 150px;
+    align-self: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: hsl(133, 79%, 28%);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cadastro button:hover{
+    background-color: hsl(133, 79%, 38%);
+}
+
+.cadastro button:active{
+    background-color: hsl(133, 79%, 48%);
+}
+
+.messages{
+    color: white;
+    font-weight: bold;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 25px;
+    left: 48%;
+    max-width: 400px;
+}
+
+.conhecimento{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    max-width: 500px;
+    margin-left: 50px;
+    animation: colorChange 10s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: orange; }
+    100% { color: red; }
+}

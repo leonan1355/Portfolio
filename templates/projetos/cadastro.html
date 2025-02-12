@@ -1,0 +1,16 @@
+{% extends 'projetos/cadastro_partials/_cadastro_body.html' %}
+{% block content %}
+    <form action="{% url 'projetos/cadastro' %}" method='POST'>
+        {% csrf_token %}
+        <div class='cadastro'>
+            {% for field in form.visible_fields %}
+            <div class='campo'>
+                <label for='{{ field.id_for_label }}'>{{ field.label }}</label>
+                {{ field }}
+            </div>
+            {% endfor %}
+            <button type='submit'>Cadastrar</button>
+        </div>
+    </form>
+</section>
+{% endblock %}

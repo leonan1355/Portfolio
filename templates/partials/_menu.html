@@ -1,0 +1,26 @@
+{% load static %}
+<div>
+    <main>
+        <section class="menu-lateral">
+            <img class="imagem__perfil" src="{% static 'assets/imagens/foto_perfil.jpeg' %}" alt="foto de perfil">
+            <h2 class="imagem__texto">Leonan Malaguti Ferreira</h2>
+            <p class="perfil_descricao">Desenvolvedor Backend</p>
+            <nav class="menu-lateral__navegacao">
+                <a href="{% url 'home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">
+                    <img src="{% if request.resolver_match.url_name == 'home' %}{% static 'assets/icones/home_ativo.png' %}{% else %}{% static 'assets/icones/home.png' %}{% endif %}"> Home
+                </a>
+                <a href="{% url 'sobre_mim' %}" class="{% if request.resolver_match.url_name == 'sobre_mim' %}active{% endif %}">
+                    <img src="{% if request.resolver_match.url_name == 'sobre_mim' %}{% static 'assets/icones/sobre_mim_ativo.png' %}{% else %}{% static 'assets/icones/sobre_mim.png' %}{% endif %}"> Sobre Mim
+                </a>
+                <a href="{% url 'habilidades' %}" class="{% if request.resolver_match.url_name == 'habilidades' %}active{% endif %}">
+                    <img src="{% if request.resolver_match.url_name == 'habilidades' %}{% static 'assets/icones/habilidades_ativo.png' %}{% else %}{% static 'assets/icones/habilidades.png' %}{% endif %}"> Habilidades
+                </a>
+                <a href="{% url 'projetos' %}" class="{% if request.resolver_match.url_name == 'projetos' %}active{% endif %}">
+                    <img src="{% if request.resolver_match.url_name == 'projetos' %}{% static 'assets/icones/projetos_ativo.png' %}{% else %}{% static 'assets/icones/projetos.png' %}{% endif %}"> Projetos
+                </a>
+                <a href="{% url 'jogos' %}" class="{% if request.resolver_match.url_name == 'jogos' %}active{% endif %}">
+                    <img src="{% if request.resolver_match.url_name == 'jogos' %}{% static 'assets/icones/jogos_ativo.png' %}{% else %}{% static 'assets/icones/jogos.png' %}{% endif %}"> Jogos
+                </a>
+            </nav>
+        </section>
+        

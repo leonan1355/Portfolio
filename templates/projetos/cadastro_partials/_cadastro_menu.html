@@ -1,0 +1,7 @@
+<section class='conteudo_cadastro_validacao'>
+    <nav class='conteudo_menu_cadastro'>
+        <a href="{% url 'projetos/conhecimento' %}" class="{% if request.resolver_match.url_name == 'projetos/conhecimento' %}active{% endif %}">Conhecimento Milenar</a>
+        <a href="{% url 'projetos/cadastro' %}" class="{% if request.resolver_match.url_name == 'projetos/cadastro' %}active{% endif %}">Cadastrar</a>
+        <a href="{% url 'projetos/login' %}" class="{% if request.resolver_match.url_name == 'projetos/login' %}active{% endif %}">Login</a>
+        <a href="{% url 'projetos/logout' %}">Logout</a>
+    </nav>

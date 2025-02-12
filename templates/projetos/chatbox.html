@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Leonan</title>
+    <link rel="icon" type="image/jpg" sizes="16x16" href="{% static 'assets/icones/favicon.jpg' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'styles/style_chatbox.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+</head>
+
+<body>
+    {% include 'partials/_menu.html' %}
+    <section class="conteudo_chatbox">
+        <div id="chatbox">
+            <h1>CHATBOX</h1>
+            <textarea id="tela1" name="tela1" readonly>{{ tela1 }}</textarea>
+            <form method="POST">
+                {% csrf_token %}
+                <div id="question">
+                    <textarea id="tela2" name="tela2">{{ tela2 }}</textarea>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    {% include 'partials/_footer.html' %}
+</body>
+</html>

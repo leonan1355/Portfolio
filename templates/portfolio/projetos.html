@@ -1,0 +1,43 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+{% block content %}
+<section class="conteudo__paginas">
+    <h1 class="titulo__paginas">PROJETOS</h1>
+    <section class="projeto__bloco">
+        <a href="https://github.com/leonan1355/Portfolio" target="_blank" class="projeto__card">
+            <img class="projeto__imagem" src="{% static 'assets/imagens/portfolio.png' %}" alt="projeto portfolio">
+            <p>Este portfolio! Desenvolvido utilizando Python, Django, HTML e CSS, seu código pode ser encontrado aqui!</p>
+        </a>
+        <a href="{% url 'projetos/calculadora' %}" class="projeto__card">
+            <img class="projeto__imagem" src="{% static 'assets/imagens/calculadora.png' %}" alt="projeto calculadora">
+            <p>Calculadora, desenvolvida sem utilizar JavaScript!</p>
+        </a>
+        <a href="{% url 'projetos/conhecimento' %}" class="projeto__card">
+            <img class="projeto__imagem" src="{% static 'assets/imagens/cadastro.png' %}" alt="projeto cadastro">
+            <p>Cadastro e validação de usuário!</p>
+        </a>
+        <a href="{% url 'projetos/chatbox' %}" class="projeto__card">
+            <img class="projeto__imagem" src="{% static 'assets/imagens/chatbox.png' %}" alt="projeto chatbox">
+            <p>Chatbox com MetaAI!</p>
+        </a>
+    </section>
+    <section class="projeto__bloco">
+        <a href="" class="projeto__card">
+            <img class="projeto__imagem" src="{% static 'assets/imagens/work_in_progress.jpg' %}" alt="projeto x">
+            <p>Projeto em Desenvolvimento</p>
+        </a>
+        <a href="" class="projeto__card">
+            <img class="projeto__imagem" src="{% static 'assets/imagens/work_in_progress.jpg' %}" alt="projeto x">
+            <p>Projeto em Desenvolvimento</p>
+        </a>
+        <a href="" class="projeto__card">
+            <img class="projeto__imagem" src="{% static 'assets/imagens/work_in_progress.jpg' %}" alt="projeto x">
+            <p>Projeto em Desenvolvimento</p>
+        </a>
+        <a href="" class="projeto__card">
+            <img class="projeto__imagem" src="{% static 'assets/imagens/work_in_progress.jpg' %}" alt="projeto x">
+            <p>Projeto em Desenvolvimento</p>
+        </a>
+    </section>
+</section>
+{% endblock %}

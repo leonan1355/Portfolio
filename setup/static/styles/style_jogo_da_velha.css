@@ -1,0 +1,128 @@
+.conteudo__jogo_da_velha{
+    margin: 0 320px;
+    display: flex;
+    width: calc(100vh + 270px);
+    height: calc(100vh - 3rem);
+    justify-content: center;
+    align-items: center;
+}
+
+#jogo_da_velha{
+    font-family: Arial, sans-serif;
+    background-color: hsl(187, 95%, 23%);
+    max-width: 600px;
+    overflow: hidden;
+}
+
+#tela{
+    color: black;
+    width: 100%;
+    padding: 20px;
+    font-size: 3rem;
+    text-align: center;
+    border: none;
+    background-color: hsl(187, 95%, 28%);
+}
+
+#botoes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 25px;
+}
+
+button{
+    width: 130px;
+    height: 130px;
+    border: none;
+    color: black;
+    background-color: white;
+    font-size: 5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+
+button:active{
+    background-color: hsl(0, 0%, 80%);
+}
+
+.J{
+    grid-row: span 3;
+    justify-self: start;
+    align-self: center;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    font-size: 2rem;
+    line-height: 2rem;
+    background-color: hsl(118, 91%, 50%);
+}
+
+.J:hover{
+    background-color: hsl(118, 91%, 60%);
+}
+
+.J:active{
+    background-color: hsl(118, 91%, 70%);
+}
+
+.BR{
+    border-right: 8px solid black;
+    border-bottom: 8px solid black;
+}
+
+.BL {
+    border-left: 8px solid black;
+    border-bottom: 8px solid black;
+}
+
+.BLR {
+    border-left: 8px solid black;
+    border-bottom: 8px solid black;
+    border-right: 8px solid black;
+}
+
+.TR{
+    border-right: 8px solid black;
+    border-top: 8px solid black;
+}
+
+.TL {
+    border-left: 8px solid black;
+    border-top: 8px solid black;
+}
+
+.TLR {
+    border-left: 8px solid black;
+    border-top: 8px solid black;
+    border-right: 8px solid black;
+}
+
+.TBR {
+    border-bottom: 8px solid black;
+    border-top: 8px solid black;
+    border-right: 8px solid black;
+}
+
+.TBL {
+    border-left: 8px solid black;
+    border-top: 8px solid black;
+    border-bottom: 8px solid black;
+}
+
+.TBLR {
+    border: 8px solid black;
+}
+
+button.X {
+    color: red;
+    font-weight: bold;
+}
+
+button.O {
+    color: blue;
+    font-weight: bold;
+}
