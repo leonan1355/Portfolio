@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'apps.portfolio',
     'apps.calculadora',
     'apps.jogo_da_velha',
@@ -37,6 +38,7 @@ INSTALLED_APPS = [
     'apps.numero_secreto',
     'apps.jogo_da_cobra',
     'apps.chatbox',
+    'apps.api_escola'
 ]
 
 MIDDLEWARE = [
@@ -137,3 +139,8 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'leonan.ferreira.dev@gmail.com'
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 20
+}

@@ -10,4 +10,5 @@ urlpatterns = [
     path('', include('apps.numero_secreto.urls')),
     path('', include('apps.jogo_da_cobra.urls')),
     path('', include('apps.chatbox.urls')),
+    path('api/', include('apps.api_escola.urls')),
 ]

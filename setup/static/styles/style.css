@@ -308,6 +308,10 @@ body {
     padding: 2rem;
 }
 
+.conteudo__paginas h2 {
+    font-size: 1.25rem;
+}
+
 .texto__habilidades {
     color: white;
     text-align: left;

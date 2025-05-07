@@ -19,21 +19,10 @@ def calcular_idade(data_nascimento):
         idade -= 1
     return idade
 
-def calcular_estudo(data_estudo):
-    """Função que calcula meu tempo de estudo para evitar atualizações"""
-    hoje = datetime.now()
-    inicio = datetime.strptime(data_estudo, '%Y-%m-%d')
-    anos = hoje.year - inicio.year
-    meses = hoje.month - inicio.month
-    estudo = f"{anos} ano e {meses} meses"
-    return estudo
-
 def sobre_mim(request):
     data_nascimento = '1998-05-05'
-    data_estudo = '2024-01-01'
     idade = calcular_idade(data_nascimento)
-    estudo = calcular_estudo(data_estudo)
-    return render(request, 'portfolio/sobre_mim.html', {'idade': idade, 'estudo': estudo})
+    return render(request, 'portfolio/sobre_mim.html', {'idade': idade})
 
 def habilidades(request):
     return render(request, 'portfolio/habilidades.html')
