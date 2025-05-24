@@ -258,7 +258,6 @@ body {
     justify-content: space-between;
     color: white;
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
     margin-right: 5rem;
 }
 
@@ -279,7 +278,7 @@ body {
     margin-bottom: 0.5rem;
     text-align: justify;
     text-indent: 3rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding-left: 20px;
     list-style-position: inside;
 }
@@ -307,6 +306,10 @@ body {
     flex-direction: column;
     margin-left: 270px;
     padding: 2rem;
+}
+
+.conteudo__paginas h2 {
+    font-size: 1.25rem;
 }
 
 .texto__habilidades {
